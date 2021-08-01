@@ -1,0 +1,923 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+body{
+    background: rgb(20, 20, 20);
+    position: relative;
+}
+
+:root{
+    --dark-color: #252533;
+    --med-color: #2C3043;
+    --light-color: #4C4E5F;
+    --pink-color: #FC6093;
+    --red-color: #d62e22;
+}
+
+:root{
+    --dark-color: #ff3232;
+    --med-color: #898c9c;
+    --light-color: #4C4E5F;
+    --pink-color: #FC6093;
+    --red-color: #EC3125;
+}
+
+
+nav{
+    height: 9vh;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    
+
+}
+
+.navMenu{
+    display: none;
+    color: white;
+    font-size: 25px;
+}
+
+
+
+
+
+
+.logo img{
+    height: 45px;
+    transform: translateY(2px);
+    width: auto;
+}
+
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu li{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    transition: opacity 0.7s;
+    text-align: center;
+}
+
+
+.menu a{
+    color: rgb(235, 232, 232);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+}
+
+.menu a:hover{
+    background: #4C4E5F;
+    border: 2px solid #4C4E5F;
+}
+
+
+
+/*HEADER---------------------------------------*/
+.header{
+    height: 91vh;
+    font-size: 16px;
+}
+.header-bg{
+    height: 90vh;
+    position: relative;
+    background: url("https://cdn.shopify.com/s/files/1/0048/0064/3161/articles/AdobeStock_90498595_73b57604-3b09-463e-a29f-828d57fb0ffa_2048x.progressive.jpeg.jpg?v=1571792072") no-repeat center/cover;
+}
+
+.header-bg::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.432);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    z-index: 5;
+    text-align: center;
+    max-width: 90%;
+    width: 90%;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.header-content *{
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.header-content h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 18px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+
+}
+
+.header-content p{
+    margin-bottom: 38px;
+    font-size: 1rem;
+}
+
+
+
+.header-message{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 13vh;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+    width: 100%;
+    z-index: 9;
+    
+}
+    
+.hm-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    z-index: 44;
+}
+
+.hm-content p{
+    color: white;
+    font-size: calc(1rem + 1vw);
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.btn{
+    background:  var(--red-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.5s;
+    border: 2px solid var(--red-color);
+}
+
+.btn1{
+    color: white;
+}
+
+.btn:hover{
+    background: transparent;
+    color: red;
+    
+}
+
+
+/*AUTO REPAIRS*/
+.auto-repairs{
+    margin: 0 auto;
+    margin-bottom: 6px;
+    padding-top: 65px;
+    padding-bottom: 95px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("https://images.unsplash.com/photo-1519817914152-22d216bb9170?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cm9hZHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80") no-repeat center/cover;
+}
+
+.title{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.auto-rep-grid{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 343px);
+    column-gap: 22px;
+    row-gap: 22px;
+    justify-content: center;
+    
+}
+
+.auto-rep-card{
+    box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.3);
+    background: rgb(54, 54, 54);
+    border-radius: 3px;
+    transition: all 0.8s;
+    cursor: pointer;
+   
+}
+
+
+
+.auto-rep-card:hover{
+    transform: scale(1.04);
+}
+
+
+
+
+
+.auto-rep-card img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 190px;
+    min-height: 190px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
+}
+
+.arc-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+
+.arc-content *{
+    color: rgb(235, 232, 232);
+    text-align: center;
+}
+
+
+.arc-content h2{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.arc-content::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: calc(100% + 5px);
+    width: 0px;
+    background: var(--red-color);
+    z-index: -1;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: 0.3s;
+}
+
+.auto-rep-card:hover .arc-content::after{
+    width: 100%;
+}
+
+
+/*OurMISSION*/
+
+.our-mission{
+    margin: 0 auto;
+    margin-bottom: 12px;
+    height: 70vh;
+    background: url("https://www.ineedcarrepair.com/Images/banner-1.jpg") no-repeat center/cover;
+    position: relative;
+    
+   
+}
+
+.our-mission::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+
+.om-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 16px;
+    max-height: 100%;
+
+}
+
+.om-content *{
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-size: 22px;
+    text-align: center;
+
+}
+
+.om-content h2{
+    text-transform: uppercase;
+    font-size: calc(1.7rem + 1vw);
+}
+
+.om-content p{
+    margin: 15px 0;
+    font-size: calc(0.75rem + 1vw);
+    
+}
+
+.om-content a{
+    margin-top: 20px;
+    text-shadow: none;
+}
+
+/*Flex example*/
+
+.flex-example{
+    height: 50vh;
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.flex1{
+    background: url("https://www.cashcarsbuyer.com/wp-content/uploads/2020/04/Ask-A-Mechanic.jpg") no-repeat center/cover;
+    margin-right: 12px;
+    height: 100%;
+    flex-basis: 50%;
+    border-radius: 8px;
+   
+}
+
+.flex2{
+    background: url("https://images.pexels.com/photos/248370/pexels-photo-248370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center/cover;
+    
+    height: 100%;
+    flex-basis: 50%;
+    border-radius: 8px;
+
+}
+
+.fe-content{
+    height: 100%;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+
+.flex1 .fe-content{
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.fe-content h2{
+    max-width: 80%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*TESTAMONIALS*/
+.testamonial{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://media.istockphoto.com/photos/road-trip-at-sunset-picture-id948205136?k=6&m=948205136&s=612x612&w=0&h=XxciiW-eJ_bL8TwryLS6yoi6J_NbUo3FQw4TVtDOkbQ=") no-repeat center/cover;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    padding: 65px 0;
+    box-shadow: 0px 0px 5px 0px rgb(0,0,0,0.3);
+}
+
+.testamonial .title{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.testamonial-flex{
+    height: 100%;
+    width: 60vw;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 0 rgba(0,0,0,0.3);
+}
+
+.frame{
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    transition: 1s;
+}
+
+.testamonial-card{
+    background: rgb(34,34,34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-width: 60vw;
+    min-width:100%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+    
+}
+
+.testamonial-card p{
+    text-align: center;
+    color: rgb(238, 235, 235);;
+    font-size: 20px;
+}
+
+.rating i{
+    font-size: 30px;
+    color: rgb(255, 141, 11);
+}
+
+.rating{
+    margin-bottom: 20px;
+}
+
+.fas.fa-quote-right{
+   
+    position: absolute;
+    padding: 15px;
+    top: 0px;
+    left: 3%;
+    color: white;
+    background: var(--red-color);
+
+}
+
+.customer-info{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.customer-info h4{
+    color: rgb(238, 235, 235);
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+
+
+
+.dots i{
+    color: white;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+
+.dots{
+   width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.rev-options{
+    
+    width: 55%;
+    max-width: 55%;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rev-options a{
+    margin-right: 14px;
+    text-align: center;
+}
+/*Footer*/
+
+.footer{
+
+    
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.teknos.com/globalassets/teknos.com/industrial-coatings/special-applications/road-marking-and-parking-lots/road-marking.jpg") no-repeat center/cover;
+    padding: 80px 0px;
+   
+}
+
+.footer *{
+    color: rgb(238, 237, 237);
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 424px);
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
+
+}
+
+
+.footer-grid img{
+    width: 100%;
+    height: auto;
+}
+
+
+.contact{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+   
+}
+
+.contact p{
+    margin-bottom: 10px;
+}
+
+.follow-us{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+
+
+.follow-us h3, .contact h3{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.follow-us ul{
+
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+}
+
+.follow-us ul li{
+    list-style: none;
+}
+
+.follow-us ul i{
+    font-size: 26px;
+    transition: 0.4s;
+}
+.follow-us ul i:hover{
+    transform: scale(1.25);
+}
+
+
+
+.copyright{
+    height: 10vh;
+    background: rgb(34, 34, 34);
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(-5px);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(241, 241, 241);
+    box-shadow: 0px 0px 7px 0px rgb(0,0,0,0.3);
+}
+
+
+@media (max-width: 1024px){
+    .header, .footer, .copyright{
+        width: 100%;
+    }
+
+   
+
+    .navMenu{
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .menu{
+        background: rgb(54, 54, 54);
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 100;
+        padding: 30px 0;
+        position: absolute;
+        top: 9vh;
+        left: 0;
+        height: 78vh;
+        width: 100%;
+        margin: 0 auto;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        font-size: 25px;
+        opacity: 0;
+        transition:  0.3s;
+    }
+
+    .toggleMenu{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menu a{
+        
+        color: rgb(240, 239, 239);
+    }
+
+    .menu a.btn1, .menu a.btn2{
+        color: rgb(240, 239, 239);
+        border: none;
+        background: transparent;
+    }
+
+    .menu a.btn1:hover, .menu a.btn2:hover{
+        color: rgb(240, 239, 239);
+        border: none;
+        background: transparent;
+    }
+
+    .header-content h1{
+        font-size: 2.8rem;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    
+    }
+
+
+    .header-content p{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 0.8rem;
+      
+    }
+
+    
+
+    .auto-rep-grid{
+  
+        margin: 0 auto;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 280px);
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-content: center;
+    }
+    
+    .auto-rep-card{
+        width: 280px;
+      
+    }
+
+    .om-content h2{
+        text-transform: uppercase;
+        font-size: 34px;
+    }
+
+    .om-content p{
+        margin: 10px 0;
+        font-size: 22px;
+
+    }
+
+    
+.flex-example{
+    height: 110vh;
+    flex-direction: column;
+    width: 97%;
+   
+}
+
+.flex1, .flex2{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.flex1{
+    margin-bottom: 12px;
+}
+
+
+.testamonial p{
+    font-size: 18px;
+}
+    
+}
+
+
+@media (max-width: 768px){
+
+    .header-content h1{
+        font-size: 2rem;
+    }
+
+
+    .header-content p{
+        font-size: 15px;
+        max-width: 80%;
+    }
+
+
+    .hm-content p{
+        font-size: 18px;
+    }
+
+    .hm-content a{
+        font-size: 14px;
+    }
+
+    .om-content h2{
+        font-size: 30px;
+    }
+
+    .om-content p{
+        font-size: 20px;
+    }
+
+    .our-mission a, .flex-example a{
+        font-size: 14px;
+    }
+
+    .testamonial-card, .frame, .testamonial-flex{
+        width: 80vw;
+    }
+
+
+    .flex1, .flex2{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .flex-example{
+        height: 80vh;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .flex-example h2{
+        font-size: 20px;
+    }
+
+    .flex1{
+        margin-bottom: 14px;
+    }
+
+    .testamonial p{
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 530px){
+
+    
+    .header-content h1{
+        font-size: 1.5rem;
+    }
+
+    .header-content p{
+        font-size: 10px;
+    }
+  
+    .header-message{
+        height: 14vh;
+    }
+
+    .hm-content p{
+        font-size: 15px;
+    }
+
+    .hm-content a, .rev-options a, .our-mission a, .flex-example a, .testamonial a{
+        font-size: 12px;
+    }
+
+   .flex-example h2{
+       font-size: 20px;
+   }
+
+   .flex-example{
+    height: 70vh;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.om-content h2{
+    font-size: 26px;
+}
+
+.om-content p{
+    font-size: 18px;
+}
+
+
+   .footer img{
+       max-width: 85%;
+       margin: 0 auto
+   }
+
+  
+
+   .testamonial p{
+       font-size: 13px;
+   }
+
+   .testamonial h4{
+       font-size: 16px;
+       margin-top: 10px;
+   }
+
+
+}
+
+
