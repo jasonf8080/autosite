@@ -752,7 +752,7 @@ nav{
     
     .auto-rep-card{
         width: 280px;
-      
+    
     }
 
     .om-content h2{
@@ -762,7 +762,7 @@ nav{
 
     .om-content p{
         margin: 10px 0;
-        font-size: 17px;
+        font-size: 18px;
 
     }
 
@@ -818,7 +818,7 @@ nav{
     }
 
     .om-content p{
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .our-mission a, .flex-example a{
@@ -877,6 +877,10 @@ nav{
     }
 
 
+    .auto-rep-grid{
+        row-gap: 25px;
+    }
+
 
     .hm-content p{
         font-size: 15px;
@@ -904,7 +908,7 @@ nav{
 }
 
 .om-content p{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
