@@ -805,6 +805,7 @@ nav{
     }
 
 
+
     .hm-content p{
         font-size: 18px;
     }
@@ -812,6 +813,8 @@ nav{
     .hm-content a{
         font-size: 14px;
     }
+
+    
 
     .om-content h2{
         font-size: 30px;
@@ -878,8 +881,19 @@ nav{
 
 
     .auto-rep-grid{
-        row-gap: 25px;
+  
+
+        grid-template-columns: repeat(auto-fit, 70px);
+     
     }
+    
+    .auto-rep-card img{
+        width: 70px;
+
+    
+    }
+
+   
 
 
     .hm-content p{
