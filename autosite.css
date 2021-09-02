@@ -804,6 +804,15 @@ nav{
         max-width: 80%;
     }
 
+    .auto-repairs{
+        background: rgb(54, 54, 54)
+    }
+    
+
+    .auto-rep-card{
+        background: var(--red-color);
+    }
+
 
 
     .hm-content p{
