@@ -100,7 +100,7 @@ nav{
 .header-bg{
     height: 90vh;
     position: relative;
-    background: url("https://cdn.shopify.com/s/files/1/0048/0064/3161/articles/AdobeStock_90498595_73b57604-3b09-463e-a29f-828d57fb0ffa_2048x.progressive.jpeg.jpg?v=1571792072") no-repeat center/cover;
+    background: url("https://media.architecturaldigest.com/photos/6036a727a033d667dce89d52/16:9/w_2560%2Cc_limit/Flying%252520Spur%252520V8%252520-%2525201.jpg") no-repeat center/cover;
 }
 
 .header-bg::after{
@@ -159,7 +159,8 @@ nav{
 
 .header-content p{
     margin-bottom: 38px;
-    font-size: 1rem;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 
@@ -224,7 +225,7 @@ nav{
     margin-bottom: 6px;
     padding-top: 65px;
     padding-bottom: 95px;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("https://images.unsplash.com/photo-1519817914152-22d216bb9170?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cm9hZHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80") no-repeat center/cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("https://media.istockphoto.com/photos/close-up-of-a-black-slate-texture-background-stone-grunge-texture-picture-id1268759368?b=1&k=20&m=1268759368&s=170667a&w=0&h=DIY4qKF5cJYL4uO8C2OoxUMWaw34_j_TPhT7tZXKw5U=") no-repeat center/cover;
 }
 
 .title{
@@ -249,8 +250,8 @@ nav{
 }
 
 .auto-rep-card{
-    box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.3);
-    background: rgb(54, 54, 54);
+   
+    background: #4C4E5F;
     border-radius: 6px;
     transition: all 0.8s;
     cursor: pointer;
@@ -323,7 +324,7 @@ nav{
     margin: 0 auto;
     margin-bottom: 12px;
     height: 70vh;
-    background: url("https://static.vecteezy.com/system/resources/previews/001/987/871/non_2x/abstract-black-stripes-diagonal-background-free-vector.jpg") no-repeat center/cover;
+    background: url("https://crawlspacemagazine.files.wordpress.com/2014/04/cool-background-textures-eo_textures.jpg") no-repeat center/cover;
 
     position: relative;
     
@@ -337,7 +338,7 @@ nav{
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
@@ -443,127 +444,122 @@ nav{
     text-align: center;
 }
 
+
+
 /*TESTAMONIALS*/
-.testamonial{
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("https://img.freepik.com/free-photo/stack-car-tires-black-background_180633-395.jpg?size=626&ext=jpg") no-repeat center/cover;
+.customer-reviews{
     margin: 0 auto;
     margin-top: 12px;
     margin-bottom: 6px;
-    padding: 65px 0;
-    box-shadow: 0px 0px 5px 0px rgb(0,0,0,0.3);
+    padding: 60px 0;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://cdn.wallpapersafari.com/42/11/lgt7pH.jpg") no-repeat center/cover;
 }
 
-.testamonial .title{
-    max-width: 90%;
+.reviews-grid{
+    max-width: 95%;
     margin: 0 auto;
-    margin-bottom: 30px;
-    color: white;
-    text-shadow: 2px 2px rgb(0, 0, 0);
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 357px);
+    column-gap: 30px;
+    row-gap: 40px;
+    justify-content: center;
 }
 
-.testamonial-flex{
-    height: 100%;
-    width: 60vw;
-    margin: 0 auto;
-    overflow: hidden;
-    box-shadow: 0px 0px 3px 0 rgba(0,0,0,0.3);
-}
-
-.frame{
-    width: 60vw;
-    height: 100%;
-    display: flex;
-    transition: 1s;
-}
-
-.testamonial-card{
-    background: rgb(34,34,34);
+.review{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 60%;
-    max-width: 60vw;
-    min-width:100%;
-    margin: 0 auto;
-    padding: 40px;
+    padding: 30px 50px;
+    background: rgb(0,0,0,0.8);
     border-radius: 8px;
-    position: relative;
-    
+    box-shadow: 0px 5px 15px rgb(0,0,0,0.3);
 }
 
-.testamonial-card p{
-    text-align: center;
-    color: rgb(238, 235, 235);;
-    font-size: 20px;
+.review *{
+    color: white;
 }
 
-.rating i{
-    font-size: 30px;
-    color: rgb(255, 141, 11);
+.quote-rating-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.rating *{
+    color: rgb(255, 188, 100);
+    font-size: 1.5rem;;
+}
+
+.fa-quote-right{
+    padding: 12px;
+    font-size: 1.2rem;
+    background: crimson;
+    border-radius: 50%;
 }
 
 .rating{
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
 }
 
-.fas.fa-quote-right{
-   
-    position: absolute;
-    padding: 15px;
-    top: 0px;
-    left: 3%;
+.rating i{
+    margin-right: 6px;
+}
+
+.review-content{
+    text-align: left;
+    margin: 1.4rem 0;
+}
+
+.review-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.person-img-container{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #4C4E5F;
+}
+
+.person-img-container img{
+    border-radius: 50%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.name{
+    font-size: 0.8rem;
+    margin-left: 0.75rem;
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.arrows i{
+    margin: 0 12px;
     color: white;
     background: var(--red-color);
-
-}
-
-.customer-info{
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.customer-info h4{
-    color: rgb(238, 235, 235);
-    font-size: 22px;
-    margin-top: 20px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 1.3rem;
 }
 
 
 
-
-.dots i{
-    color: white;
-    margin: 0 12px;
-    cursor: pointer;
-}
-
-
-.dots{
-   width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 24px;
-}
-
-.rev-options{
-    
-    width: 55%;
-    max-width: 55%;
-    margin: 0 auto;
-    margin-top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.rev-options a{
-    margin-right: 14px;
-    text-align: center;
-}
 /*Footer*/
 
 .footer{
@@ -572,7 +568,7 @@ nav{
     width: 100%;
     margin: 0 auto;
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://www.teknos.com/globalassets/teknos.com/industrial-coatings/special-applications/road-marking-and-parking-lots/road-marking.jpg") no-repeat center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.teknos.com/globalassets/teknos.com/industrial-coatings/special-applications/road-marking-and-parking-lots/road-marking.jpg") no-repeat center/cover;
     padding: 80px 0px;
    
 }
@@ -809,10 +805,7 @@ nav{
     }
     
 
-    .auto-rep-card{
-        background: var(--red-color);
-    }
-
+   
 
 
     .hm-content p{
