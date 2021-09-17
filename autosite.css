@@ -244,14 +244,14 @@ nav{
     display: grid;
     grid-template-columns: repeat(auto-fit, 343px);
     column-gap: 22px;
-    row-gap: 22px;
+    row-gap: 30px;
     justify-content: center;
     
 }
 
 .auto-rep-card{
-   
-    background: #4C4E5F;
+
+    background: #dd2518;
     border-radius: 6px;
     transition: all 0.8s;
     cursor: pointer;
@@ -455,15 +455,13 @@ nav{
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://cdn.wallpapersafari.com/42/11/lgt7pH.jpg") no-repeat center/cover;
 }
 
-.reviews-grid{
-    max-width: 95%;
+.reviews-flex{
+    max-width: 60%;
     margin: 0 auto;
     margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 357px);
-    column-gap: 30px;
-    row-gap: 40px;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .review{
@@ -511,6 +509,7 @@ nav{
 
 .review-content{
     text-align: left;
+    font-size: 1.25rem;
     margin: 1.4rem 0;
 }
 
@@ -523,8 +522,8 @@ nav{
 
 
 .person-img-container{
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     border: 2px solid #4C4E5F;
 }
@@ -538,7 +537,7 @@ nav{
 }
 
 .name{
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     margin-left: 0.75rem;
 }
 
@@ -556,7 +555,13 @@ nav{
     padding: 8px 14px;
     border-radius: 4px;
     font-size: 1.3rem;
+    cursor: pointer;
 }
+
+.arrows i:hover{
+    transform: scale(1.05);
+}
+
 
 
 
@@ -804,7 +809,9 @@ nav{
         background: rgb(34, 34, 34)
     }
     
-
+    .auto-rep-card{
+        background: #dd2518;
+    }
    
 
 
