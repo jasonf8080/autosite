@@ -10,6 +10,14 @@ function showMenu(e){
 const reviews = [
 
     {
+        rating: '4.7',
+        content: 'I have been a client for the last three years now and i have been very happy with the type of service they provide. The whole team was courteous and very professional. I  truly and highly recommended.',
+        img: 'https://marvel-b1-cdn.bc0a.com/f00000000243271/www.languageline.com/s/person-headshot-51.jpg',
+        person: 'Marvin Lowton'
+
+    },
+
+    {
         rating: '5.0',
         content: 'Expert Care Auto Company has helped with my Toyota for years. Their staff is very friendly, experienced, and dedicated to their work. Very nice people.',
         img: 'https://2d3z3x4e2xrx130kvm2hxdsp-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/Tracy_Wright_Corvo_Photography_actor_headshot-16.jpg',
@@ -19,23 +27,12 @@ const reviews = [
 
     {
         rating: '4.7',
-        content: 'Expert Care Auto Company has helped with my Toyota for years. Their staff is very friendly, experienced, and dedicated to their work. Very nice people.',
+        content: 'Let me tell you, when it comes to great service, there is no one better than the team over at Expert Care Auto. My suspension needed some major repairs and I was completely satisfied with the work done.',
         img: 'https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg',
         person: 'Alina Shi'
 
     },
 
-    {
-        rating: '4.5',
-        content: 'Expert Care Auto Company has helped with my Toyota for years. Their staff is very friendly, experienced, and dedicated to their work. Very nice people.',
-        img: 'https://marvel-b1-cdn.bc0a.com/f00000000243271/www.languageline.com/s/person-headshot-51.jpg',
-        person: 'Marvin Lowton'
-
-    },
-
-
-
-    
 
 ];
 
