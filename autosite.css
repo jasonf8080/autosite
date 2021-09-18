@@ -335,10 +335,8 @@ nav{
 .our-mission{
     margin: 0 auto;
     margin-bottom: 12px;
-    height: 70vh;
     background: url("https://crawlspacemagazine.files.wordpress.com/2014/04/cool-background-textures-eo_textures.jpg") no-repeat center/cover;
     position: relative;
-    
    
 }
 
@@ -350,16 +348,13 @@ nav{
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 0;
 }
 
 
 
 .om-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 5rem 0;
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -377,6 +372,7 @@ nav{
     text-shadow: 2px 2px rgb(0, 0, 0);
     font-size: 22px;
     text-align: center;
+    z-index: 5;
 
 }
 
