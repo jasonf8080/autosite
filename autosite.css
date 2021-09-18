@@ -251,7 +251,7 @@ nav{
 
 .auto-rep-card{
 
-    background: #dd2518;
+    background: #4C4E5F;
     border-radius: 6px;
     transition: all 0.8s;
     cursor: pointer;
@@ -262,6 +262,7 @@ nav{
 
 .auto-rep-card:hover{
     transform: scale(1.04);
+   
 }
 
 
@@ -317,6 +318,17 @@ nav{
     width: 100%;
 }
 
+.all-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.all-services .btn{
+    font-size: 1.3rem;
+}
+
 
 /*OurMISSION*/
 
@@ -325,7 +337,6 @@ nav{
     margin-bottom: 12px;
     height: 70vh;
     background: url("https://crawlspacemagazine.files.wordpress.com/2014/04/cool-background-textures-eo_textures.jpg") no-repeat center/cover;
-
     position: relative;
     
    
@@ -941,6 +952,11 @@ nav{
        font-size: 16px;
        margin-top: 10px;
    }
+
+   .name{
+    font-size: 1rem;
+   
+}
 
 
 }
