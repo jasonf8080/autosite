@@ -395,7 +395,6 @@ nav{
 /*Flex example*/
 
 .flex-example{
-    height: 50vh;
     width: 98%;
     margin: 0 auto;
     display: flex;
@@ -406,7 +405,7 @@ nav{
 .flex1{
     background: url("https://www.cashcarsbuyer.com/wp-content/uploads/2020/04/Ask-A-Mechanic.jpg") no-repeat center/cover;
     margin-right: 12px;
-    height: 100%;
+    height: 360px;
     flex-basis: 50%;
     border-radius: 4px;
     box-shadow: 0px 0px 5px 0px rgb(110, 110, 110);
@@ -416,7 +415,7 @@ nav{
 .flex2{
     background: url("https://images.pexels.com/photos/248370/pexels-photo-248370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center/cover;
     
-    height: 100%;
+    height: 360px;
     flex-basis: 50%;
     border-radius: 4px;
     box-shadow: 0px 0px 5px 0px rgb(110, 110, 110);
@@ -449,6 +448,52 @@ nav{
     font-size: 30px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+/*schedule-products*/
+
+.schedule-products{
+    max-width: 98%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    margin: 0 auto;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+
+.schedule, .products{
+    max-width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 5px 0px rgba(235, 232, 232, 0.438);
+    border-radius: 6px;
+}
+
+.schedule img, .products img{
+    max-width: 100%;
+}
+
+.sp-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background: rgb(0,0,0,0.3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sp-content h2{
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    color: white;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    text-align: center;
+    font-size: 2rem;
 }
 
 
@@ -788,6 +833,14 @@ nav{
     margin-bottom: 12px;
 }
 
+.sp-content h2{
+    font-size: 1.4rem;
+}
+
+.sp-content .btn{
+    font-size: 0.6rem;
+}
+
 
 .testamonial p{
     font-size: 18px;
@@ -866,6 +919,7 @@ nav{
         margin-bottom: 14px;
     }
 
+
     .testamonial p{
         font-size: 15px;
     }
@@ -877,7 +931,7 @@ nav{
 }
 
 
-@media (max-width: 530px){
+@media (max-width: 590px){
     .header, .header-bg{
         height: 77vh;
     }
@@ -923,6 +977,21 @@ nav{
     flex-direction: column;
 
 }
+
+.schedule-products{
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.schedule{
+    margin-bottom: 12px;
+}
+
+
 
 .om-content h2{
     font-size: 26px;
